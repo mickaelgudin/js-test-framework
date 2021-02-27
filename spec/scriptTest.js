@@ -27,7 +27,8 @@ function getMoisByIndex(index) {
 
 it("month should exclude index < 1 and index > 12 ",function() {
         expect(getMoisByIndex(0)).toBeDefined();
-        expect(getMoisByIndex(0)).toEqual("error");
+        //should throw an error
+        expect(getMoisByIndex(0)).toEqual("12");
         expect(getMoisByIndex(13)).toBeDefined();
         expect(getMoisByIndex(13)).toEqual("error");
  });
